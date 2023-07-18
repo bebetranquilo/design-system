@@ -3,3 +3,9 @@
 
 # Test
 npm test
+
+# Prettier
+npm run format
+
+# Eslint
+npm run lint

@@ -3,7 +3,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint",
+    "lint": "turbo run lint -- --fix",
     "prepare": "husky install",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo test",
@@ -31,6 +31,7 @@
     "react-test-renderer": "^18.2.0",
     "husky": "^8.0.3",
     "prettier": "^2.5.1",
+    "typescript": "^5.0.2",
     "turbo": "latest"
   },
   "name": "bb-design-system",

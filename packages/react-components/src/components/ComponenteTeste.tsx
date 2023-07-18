@@ -1,27 +1,30 @@
-// App.jsx
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import {useState} from 'react';
 
-import React from "react";
-import { useEffect, useState } from "react";
+const STATUS = {
+  HOVERED: 'hovered',
+  NORMAL: 'normal',
+};
 
-function ComponenteTeste() {
-  const [todos, setTodos] = useState([]);
+export default function ComponenteTeste({page, children}) {
+  const [status, setStatus] = useState(STATUS.NORMAL);
 
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos")
-      .then((response) => response.json())
-      .then((json) => setTodos(json));
-  }, []);
+  const onMouseEnter = () => {
+    setStatus(STATUS.HOVERED);
+  };
+
+  const onMouseLeave = () => {
+    setStatus(STATUS.NORMAL);
+  };
 
   return (
-    <>
-      {todos.map((todo) => (
-        <div key={todo.id}>
-          <h1>{todo.title}</h1>
-          <p>{todo.completed}</p>
-        </div>
-      ))}
-    </>
+    <a
+      className={status}
+      href={page || '#'}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      {children}
+    </a>
   );
 }
-
-export default ComponenteTeste;

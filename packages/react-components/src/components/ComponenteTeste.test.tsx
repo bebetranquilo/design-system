@@ -1,35 +1,31 @@
-// App.test.js
-import { render, screen } from "@testing-library/react";
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+import renderer from 'react-test-renderer';
+import ComponenteTeste from './ComponenteTeste';
 
-import ComponenteTeste from "./ComponenteTeste";
 
-describe("ComponenteTeste", () => {
-  let originalFetch;
+it('changes the class when hovered', () => {
+   
+  const component = renderer.create(
+    <ComponenteTeste page="http://www.facebook.com">Facebook</ComponenteTeste>,
+  );
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 
-  beforeEach(() => {
-    originalFetch = global.fetch;
-    global.fetch = jest.fn(() =>
-      Promise.resolve({
-        json: () =>
-          Promise.resolve([
-            {
-              userId: 1,
-              id: 1,
-              title: "Kaliteye hoşgeldiniz",
-              completed: false,
-            },
-          ]),
-      })
-    );
+  // manually trigger the callback
+  renderer.act(() => {
+    tree.props.onMouseEnter();
   });
+  // re-rendering
+  tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 
-  afterEach(() => {
-    global.fetch = originalFetch;
+  // manually trigger the callback
+  renderer.act(() => {
+    tree.props.onMouseLeave();
   });
-
-  it("renders ComponenteTeste component", async () => {
-    render(<ComponenteTeste />);
-    const linkElement = await screen.findByText(/Kaliteye hoşgeldiniz/i);
-    expect(linkElement).toBeInTheDocument();
-  });
+  // re-rendering
+  tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
