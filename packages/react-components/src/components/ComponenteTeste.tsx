@@ -1,9 +1,27 @@
-import style from "@bb-design-system/styles/src/ComponenteTeste.module.scss";
+// App.jsx
 
-export const ComponenteTeste = () => {
+import React from "react";
+import { useEffect, useState } from "react";
+
+function ComponenteTeste() {
+  const [todos, setTodos] = useState([]);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/todos")
+      .then((response) => response.json())
+      .then((json) => setTodos(json));
+  }, []);
+
   return (
     <>
-      <button className={style.botaoLegal}>BELEZA</button>;
+      {todos.map((todo) => (
+        <div key={todo.id}>
+          <h1>{todo.title}</h1>
+          <p>{todo.completed}</p>
+        </div>
+      ))}
     </>
   );
-};
+}
+
+export default ComponenteTeste;

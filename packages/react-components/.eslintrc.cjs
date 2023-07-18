@@ -8,6 +8,8 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:react-hooks/recommended',
+    "react-app", 
+    "react-app/jest"
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
