@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import {useState} from 'react';
+import { useState } from "react";
 
 const STATUS = {
-  HOVERED: 'hovered',
-  NORMAL: 'normal',
+  HOVERED: "hovered",
+  NORMAL: "normal",
 };
 
-export default function ComponenteTeste({page, children}) {
+export default function ComponenteTeste({ page, children }) {
   const [status, setStatus] = useState(STATUS.NORMAL);
 
   const onMouseEnter = () => {
@@ -20,7 +20,7 @@ export default function ComponenteTeste({page, children}) {
   return (
     <a
       className={status}
-      href={page || '#'}
+      href={page || "#"}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
