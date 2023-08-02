@@ -20,7 +20,7 @@
         "include": false
       }
     ],
-    "attribute-quotes": true,
+    "attribute-quotes": 2,
     "border-zero": "none",
     "placeholder-in-extend": 2,
     "mixins-before-declarations": [
@@ -37,40 +37,59 @@
     "no-color-keywords": 2,
     "no-color-literals": 2,
     "no-debug": 2,
-    "class-name-format": {
-      "allow-leading-underscore": true,
-      "convention": "hyphenatedlowercase"
-    },
-    "function-name-format": {
-      "allow-leading-underscore": false,
-      "convention": "camelcase"
-    },
-    "mixin-name-format": {
-      "allow-leading-underscore": false,
-      "convention": "camelcase"
-    },
-    "property-units": {
-      "global": "rem",
-      "per-property": {
-        "border": "px",
-        "border-radius": "px",
-        "border-width": "px",
-        "box-shadow": "px"
+    "class-name-format": [
+      2,
+      {
+        "allow-leading-underscore": true,
+        "convention": "hyphenatedlowercase"
       }
-    },
-    "quotes": {
+    ],
+    "function-name-format": [
+      2,
+      {
+        "allow-leading-underscore": false,
+        "convention": "camelcase"
+      }
+    ],
+    "mixin-name-format": [
+      2,
+      {
+        "allow-leading-underscore": false,
+        "convention": "camelcase"
+      }
+    ],
+    "property-units": [
+      2,
+      {
+        "global": "rem",
+        "per-property": {
+          "border": "px",
+          "border-radius": "px",
+          "border-width": "px",
+          "box-shadow": "px"
+        }
+      }
+    ],
+    "quotes": [
+    2,
+    {
       "style": "double"
-    },
-    "placeholder-name-format": {
+    }
+    ],
+    "placeholder-name-format": [
+    2,
+    {
       "allow-leading-underscore": false,
       "convention": "camelcase"
-    },
+    }],
     "force-pseudo-nesting": 2,
     "force-element-nesting": 2,
-    "clean-import-paths": {
+    "clean-import-paths": [
+    2,
+    {
       "leading-underscore": false,
       "filename-extension": false
-    },
+    }],
     "no-warn": 1,
     "declarations-before-nesting": true,
     "empty-args": false,
@@ -130,11 +149,11 @@
     "space-after-comma": 2,
     "space-around-operator": 2,
     "space-before-bang": 2,
-    "variable-name-format":[
+    "variable-name-format": [
       2,
       {
         "allow-leading-underscore": true,
-        "convention": "hyphenateduppercase",
+        "convention": "hyphenateduppercase"
       }
     ],
     "variable-for-property": [

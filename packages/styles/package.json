@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "cpx ./src/**/ ./dist/ --watch && sass src/main.scss ./dist/main.css",
-    "build": "cpx ./src/*/ ./dist/ && sass src/main.scss ./dist/main.css"
+    "build": "cpx ./src/*/ ./dist/ && sass src/main.scss ./dist/main.css",
+    "lint": "stylelint **/*.scss"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.63.6"
+    "sass": "^1.63.6",
+    "stylelint": "^15.10.2",
+    "stylelint-config-standard-scss": "^10.0.0"
   },
   "dependencies": {
     "cpx": "^1.5.0"

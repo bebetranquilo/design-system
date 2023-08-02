@@ -3,7 +3,8 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint -- --fix",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint -- --fix",
     "prepare": "husky install",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo test",
