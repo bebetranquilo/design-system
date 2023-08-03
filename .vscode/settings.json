@@ -1,14 +1,5 @@
 {
-    "stylelint.validate": [
-        "css",
-        "less",
-        "postcss",
-        "scss"
-    ],
-    "stylelint.snippet": [
-        "css",
-        "less",
-        "postcss",
-        "scss"
-      ]
+  "stylelint.validate": ["css", "less", "postcss", "scss"],
+  "stylelint.snippet": ["css", "less", "postcss", "scss"],
+  "editor.formatOnSave": true
 }

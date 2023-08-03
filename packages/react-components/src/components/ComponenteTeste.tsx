@@ -6,7 +6,8 @@ const STATUS = {
   NORMAL: "normal",
 };
 
-export default function ComponenteTeste({ page, children }) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function ComponenteTeste({ page, children }: any) {
   const [status, setStatus] = useState(STATUS.NORMAL);
 
   const onMouseEnter = () => {

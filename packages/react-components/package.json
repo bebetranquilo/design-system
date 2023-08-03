@@ -7,14 +7,19 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
     "preview": "vite preview",
-    "test": "jest --config=jest.config.ts --coverage",
+    "test": "jest --config=jest.config.ts",
+    "test:cov": "jest --config=jest.config.ts --coverage",
     "test:watch": "jest --watch"
   },
+  "files": [
+    "/dist"
+  ],
   "dependencies": {
+    "@bb-design-system/styles": "*",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@bb-design-system/styles": "*"
+    "react-dom": "^18.2.0"
   },
   "jest": {
     "testEnvironment": "jsdom",
@@ -30,8 +35,10 @@
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
     "@testing-library/jest-dom": "^5.17.0",
+    "@types/jest": "^29.5.3",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "@types/react-test-renderer": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
@@ -43,7 +50,9 @@
     "jest-environment-jsdom": "^29.6.1",
     "jest-svg-transformer": "^1.0.0",
     "react-test-renderer": "^18.2.0",
+    "ts-jest": "^29.1.1",
     "typescript": "^5.0.2",
-    "vite": "^4.4.0"
+    "vite": "^4.4.0",
+    "vite-plugin-dts": "^3.4.0"
   }
 }

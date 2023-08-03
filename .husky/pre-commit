@@ -7,5 +7,5 @@ npm test
 # Prettier
 npm run format
 
-# Eslint
+# Eslint / SassLint
 npm run lint
