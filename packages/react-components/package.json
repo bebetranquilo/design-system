@@ -1,7 +1,7 @@
 {
   "name": "@bb-design-system/react-components",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.1.0-alpha.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,7 +17,7 @@
     "/dist"
   ],
   "dependencies": {
-    "@bb-design-system/styles": "*",
+    "@bb-design-system/styles": "2.2.0-alpha.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

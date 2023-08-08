@@ -2,7 +2,22 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # Test
-#npm test:cov
+npm run test:cov
+
+# Change Sets
+npm run build
+
+# Change Sets
+npx changeset pre exit
+
+# Change Sets
+npx changeset pre enter alpha
+
+# Change Sets
+npm run changeset
+
+# Change Sets
+npm run version-packages
 
 # Build
-#npm test:cov
+# npm test:cov

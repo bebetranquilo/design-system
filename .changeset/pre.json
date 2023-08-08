@@ -1,0 +1,14 @@
+{
+  "mode": "exit",
+  "tag": "alpha",
+  "initialVersions": {
+    "eslint-config-custom": "1.1.0-next.0",
+    "@bb-design-system/react-components": "2.1.0-next.0",
+    "@bb-design-system/styles": "2.2.0-next.0",
+    "tsconfig": "1.1.0-next.0"
+  },
+  "changesets": [
+    "nervous-bananas-press",
+    "perfect-mails-doubt"
+  ]
+}
