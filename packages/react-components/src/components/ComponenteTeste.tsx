@@ -1,4 +1,3 @@
- 
 import { useState } from "react";
 import styles from "@bb-design-system/styles/dist/ComponenteTeste2.module.scss";
 const STATUS = {
