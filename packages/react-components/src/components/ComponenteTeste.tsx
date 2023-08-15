@@ -1,13 +1,15 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+ 
 import { useState } from "react";
-
+import styles from "@bb-design-system/styles/dist/ComponenteTeste2.module.scss";
 const STATUS = {
   HOVERED: "hovered",
   NORMAL: "normal",
 };
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function ComponenteTeste({ page, children }: any) {
+export interface ComponenteTesteProps {
+  page: string;
+  children: string;
+}
+export function ComponenteTeste({ page, children }: ComponenteTesteProps) {
   const [status, setStatus] = useState(STATUS.NORMAL);
 
   const onMouseEnter = () => {
@@ -17,10 +19,10 @@ export default function ComponenteTeste({ page, children }: any) {
   const onMouseLeave = () => {
     setStatus(STATUS.NORMAL);
   };
-
+  console.log(status);
   return (
     <a
-      className={status}
+      className={styles.botao}
       href={page || "#"}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}

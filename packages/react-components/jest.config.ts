@@ -6,7 +6,9 @@ const config: Config = {
   transform: {
     "^.+\\.tsx?$": "ts-jest",
   },
-
+  moduleNameMapper: {
+    "\\.(css|scss)$": "<rootDir>/.jest/identity-obj-proxy-esm.js",
+  },
   collectCoverage: true,
   clearMocks: true,
   coverageDirectory: "coverage",

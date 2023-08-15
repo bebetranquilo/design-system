@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 import renderer, { ReactTestRendererJSON } from "react-test-renderer";
-import ComponenteTeste from "./ComponenteTeste";
+import { ComponenteTeste } from "./ComponenteTeste";
 
 it("changes the class when hovered", async () => {
   const component = renderer.create(

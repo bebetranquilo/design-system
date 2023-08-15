@@ -14,10 +14,10 @@ npx changeset pre exit
 npx changeset pre enter alpha
 
 # Change Sets
-npm run changeset
+# npm run changeset
 
 # Change Sets
-npm run version-packages
+# npm run version-packages
 
 # Build
 # npm test:cov
