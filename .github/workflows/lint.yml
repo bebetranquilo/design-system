@@ -1,13 +1,15 @@
-name: Deploy docs
+name: Lint & Test
 
 on:
-  push:
+  pull_request:
     branches:
-      - dev
+      - "dev"
 
 jobs:
-  build-deploy:
+  lint-and-test:
+    name: Lint and Test
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -25,20 +27,8 @@ jobs:
       - name: Prettier Format
         run: npm run format
 
-      - name: Prettier Format
-        run: npm run format
-
       - name: Lint
         run: npm run lint
 
       - name: Test Coverage
         run: npm run test:cov
-
-      - name: Build
-        run: npm run build
-
-      - name: Deploy storybook
-        working-directory: ./apps/components-doc
-        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
-        env:
-          GH_TOKEN: MyCompany:${{ secrets.GITHUB_TOKEN }}
