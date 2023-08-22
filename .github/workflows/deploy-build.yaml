@@ -6,7 +6,7 @@ on:
       - dev
 
 jobs:
-  install-packages-set-node-version:
+  setup-config:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,7 +22,7 @@ jobs:
 
   prettier-lint:
     runs-on: ubuntu-latest
-    needs: install-packages
+    needs: setup-config
     steps:
       - run: npm run format
       - run: npm run lint
