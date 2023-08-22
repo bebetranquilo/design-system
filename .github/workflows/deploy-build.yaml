@@ -6,7 +6,7 @@ on:
       - dev
 
 jobs:
-  build-deploy:
+  setup-config:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -19,7 +19,7 @@ jobs:
           cache: "npm"
           cache-dependency-path: "**/package-lock.json"
 
-      - name: Install packages
+      - name: Install pacakges
         run: npm ci
 
       - name: Prettier Format
