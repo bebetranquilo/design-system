@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - dev
+  workflow_run:
+    workflows: ["Unit Test and Coverage"]
+    types:
+      - completed
 
 jobs:
   build-and-deploy:
