@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: set-node-version
     steps:
-      - run: npm run ci
+      - run: npm ci
 
   prettier-lint:
     runs-on: ubuntu-latest
