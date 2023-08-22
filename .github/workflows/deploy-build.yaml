@@ -6,7 +6,7 @@ on:
       - dev
 
 jobs:
-  set-node-version:
+  install-packages-set-node-version:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,11 +18,6 @@ jobs:
           node-version: 16.20.0
           cache: "npm"
           cache-dependency-path: "**/package-lock.json"
-
-  install-packages:
-    runs-on: ubuntu-latest
-    needs: set-node-version
-    steps:
       - run: npm ci
 
   prettier-lint:
