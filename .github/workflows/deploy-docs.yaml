@@ -8,6 +8,7 @@ on:
 
 jobs:
   build-and-deploy:
+    needs: test-and-coverage
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
