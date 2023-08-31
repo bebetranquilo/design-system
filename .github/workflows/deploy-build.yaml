@@ -21,8 +21,6 @@ jobs:
 
       - name: Install pacakges
         run: npm i
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
       - name: Prettier Format
         run: npm run format
@@ -38,6 +36,8 @@ jobs:
 
       - name: Publish Libraries
         run: npm run publish
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
       - name: Deploy storybook
         working-directory: ./apps/components-doc
