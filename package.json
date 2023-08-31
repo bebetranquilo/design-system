@@ -50,7 +50,7 @@
   "engines": {
     "node": ">=16.20.0"
   },
-  "name": "bb-design-system",
+  "name": "bebetranquilo",
   "packageManager": "npm@9.7.2",
   "workspaces": [
     "apps/*",
