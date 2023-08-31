@@ -20,7 +20,7 @@ jobs:
           cache-dependency-path: "**/package-lock.json"
 
       - name: Install pacakges
-        run: npm ci
+        run: npm i
 
       - name: Prettier Format
         run: npm run format
