@@ -37,7 +37,7 @@ jobs:
         run: npm run build
 
       - name: Publish Libraries
-        run: npm publish
+        run: npm run publish
 
       - name: Deploy storybook
         working-directory: ./apps/components-doc
