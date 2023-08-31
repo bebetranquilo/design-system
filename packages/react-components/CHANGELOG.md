@@ -1,4 +1,4 @@
-# @bb-design-system/react-components
+# @bebetranquilo/react-components
 
 ## 2.1.0-alpha.1
 
@@ -9,7 +9,7 @@
 ### Patch Changes
 
 - Updated dependencies
-  - @bb-design-system/styles@2.2.0-alpha.1
+  - @bebetranquilo/styles@2.2.0-alpha.1
 
 ## 2.1.0-next.0
 
@@ -20,7 +20,7 @@
 ### Patch Changes
 
 - Updated dependencies
-  - @bb-design-system/styles@2.2.0-next.0
+  - @bebetranquilo/styles@2.2.0-next.0
 
 ## 2.0.0
 
@@ -33,4 +33,4 @@
 
 - Updated dependencies
 - Updated dependencies
-  - @bb-design-system/styles@2.0.0
+  - @bebetranquilo/styles@2.0.0

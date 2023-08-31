@@ -1,4 +1,4 @@
-# @bb-design-system/styles
+# @bebetranquilo/styles
 
 ## 2.2.0-alpha.1
 

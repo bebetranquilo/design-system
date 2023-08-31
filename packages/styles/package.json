@@ -1,10 +1,11 @@
 {
-  "name": "@bb-design-system/styles",
+  "name": "@bebetranquilo/styles",
   "version": "2.2.0-alpha.1",
   "scripts": {
     "dev": "cpx ./src/**/ ./dist/ --watch && sass src/main.scss ./dist/main.css",
     "build": "cpx ./src/*/ ./dist/ && sass src/main.scss ./dist/main.css",
-    "lint": "stylelint **/*.scss"
+    "lint": "stylelint **/*.scss",
+    "publish": "npm publish"
   },
   "author": "",
   "license": "ISC",

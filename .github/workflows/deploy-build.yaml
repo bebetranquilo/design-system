@@ -37,6 +37,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Publish Libraries
+        run: npm run build
+
       - name: Deploy storybook
         working-directory: ./apps/components-doc
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static

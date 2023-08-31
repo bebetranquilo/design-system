@@ -2,14 +2,11 @@
   "mode": "pre",
   "tag": "alpha",
   "initialVersions": {
-    "@bb-design-system/components-doc": "0.0.0",
+    "@bebetranquilo/components-doc": "0.0.0",
     "eslint-config-custom": "1.1.0-alpha.1",
-    "@bb-design-system/react-components": "2.1.0-alpha.1",
-    "@bb-design-system/styles": "2.2.0-alpha.1",
+    "@bebetranquilo/react-components": "2.1.0-alpha.1",
+    "@bebetranquilo/styles": "2.2.0-alpha.1",
     "@bebetranquilo/tsconfig": "1.1.0-alpha.1"
   },
-  "changesets": [
-    "nervous-bananas-press",
-    "perfect-mails-doubt"
-  ]
+  "changesets": ["nervous-bananas-press", "perfect-mails-doubt"]
 }

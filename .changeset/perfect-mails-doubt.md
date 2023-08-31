@@ -1,8 +1,8 @@
 ---
 "eslint-config-custom": minor
-"@bb-design-system/react-components": minor
+"@bebetranquilo/react-components": minor
 "tsconfig": minor
-"@bb-design-system/styles": minor
+"@bebetranquilo/styles": minor
 ---
 
 Test alpha

@@ -1,7 +1,6 @@
 {
-  "name": "@bb-design-system/react-components",
-  "private": true,
-  "version": "2.1.0-alpha.1",
+  "name": "@bebetranquilo/react-components",
+  "version": "2.1.0-alpha.2",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
@@ -19,8 +18,12 @@
   "files": [
     "/dist"
   ],
+  "author": {
+    "name": "bebetranquilo",
+    "email": "bebetranquiloapp@gmail.com"
+  },
   "dependencies": {
-    "@bb-design-system/styles": "*",
+    "@bebetranquilo/styles": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

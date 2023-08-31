@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "@bb-design-system/styles/dist/ComponenteTeste2.module.scss";
+import styles from "@bebetranquilo/styles/dist/ComponenteTeste2.module.scss";
 const STATUS = {
   HOVERED: "hovered",
   NORMAL: "normal",

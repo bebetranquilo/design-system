@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import {
   ComponenteTeste,
   ComponenteTesteProps,
-} from "@bb-design-system/react-components";
+} from "@bebetranquilo/react-components";
 
 export default {
   title: "Data display/Avatar",
