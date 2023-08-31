@@ -1,6 +1,6 @@
 # @bebetranquilo/react-components
 
-## 2.1.0-alpha.3
+## 2.1.1
 
 ### Minor Changes
 
@@ -11,7 +11,7 @@
 
 - Updated dependencies [505fb2a]
 - Updated dependencies
-  - @bebetranquilo/styles@2.2.0-alpha.2
+  - @bebetranquilo/styles@2.2.1
 
 ## 2.1.0-alpha.1
 

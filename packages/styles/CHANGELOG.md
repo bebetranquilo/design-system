@@ -1,6 +1,6 @@
 # @bebetranquilo/styles
 
-## 2.2.0-alpha.2
+## 2.2.1
 
 ### Minor Changes
 

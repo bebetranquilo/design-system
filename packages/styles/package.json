@@ -1,6 +1,6 @@
 {
   "name": "@bebetranquilo/styles",
-  "version": "2.2.0-alpha.2",
+  "version": "2.2.1",
   "scripts": {
     "dev": "cpx ./src/**/ ./dist/ --watch && sass src/main.scss ./dist/main.css",
     "build": "cpx ./src/*/ ./dist/ && sass src/main.scss ./dist/main.css",
