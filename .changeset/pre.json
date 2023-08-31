@@ -9,6 +9,8 @@
     "@bebetranquilo/tsconfig": "1.1.0-alpha.1"
   },
   "changesets": [
+    "chilled-pets-love",
+    "empty-elephants-repair",
     "nervous-bananas-press",
     "perfect-mails-doubt"
   ]

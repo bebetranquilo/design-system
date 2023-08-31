@@ -1,5 +1,18 @@
 # @bebetranquilo/react-components
 
+## 2.1.0-alpha.3
+
+### Minor Changes
+
+- 505fb2a: New pipelines
+- Test
+
+### Patch Changes
+
+- Updated dependencies [505fb2a]
+- Updated dependencies
+  - @bebetranquilo/styles@2.2.0-alpha.2
+
 ## 2.1.0-alpha.1
 
 ### Minor Changes
